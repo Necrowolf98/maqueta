@@ -164,7 +164,7 @@ body {
   6. SLIDER SLIDER ANIMACIÓN
   --------------------------------------------------*/
 .swiper-slide {
-  height: 31rem !important;
+  height: 40rem !important;
   text-align: center !important;
   color: #fff !important;
   background-size: cover !important;
@@ -334,39 +334,19 @@ body {
           transform: translateX(-50%) rotate(180deg);
   background-color: #35363c; }
 
-/*----------------------------------------------
-10. ESTILOS MENÚ DE NAVEGACIÓN
-------------------------------------------------*/
-#menunavegacion .navbar-toggler {
-  padding: 0px;
-  font-size: 1rem;
-  line-height: 1;
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-  outline: 0; }
-
-/*------------------------------------------------
-11. ESTILOS BOTON MENÚ PERSONALIZADO DE NAVEGACIÓN
---------------------------------------------------*/
-#menunavegacion .boton-menu:before {
+#menu-navegacion .boton-menu:before {
   font-family: 'Font Awesome 5 Free';
   content: "\f0c9";
   font-weight: 900;
-  font-size: 1.9rem;
-  color: white; }
+  color: #fff;
+  font-size: 2rem; }
 
-/*------------------------------------------------
-11.1 CAMBIAR POR LA X
---------------------------------------------------*/
-#menunavegacion .icono-cerrar:before {
+#menu-navegacion .icono-cerrar:before {
   content: "\f00d";
   position: relative;
   left: .2rem; }
 
-/*------------------------------------------------
-12. ESTILOS BOTON MENÚ PERSONALIZADO DE NAVEGACIÓN
---------------------------------------------------*/
+/*Estilos de los enlace del #menu-navegacion*/
 .navbar-dark .navbar-nav .nav-link {
   padding: 1rem 1.5rem;
   display: -webkit-box;
@@ -377,14 +357,8 @@ body {
           justify-content: space-between;
   border-radius: .5rem;
   -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  transition: all .3s ease; }
 
-/*------------------------------------------------
-13. ESTILOS BOTON LISTA SUB MENU INICIO ETC
---------------------------------------------------*/
 .navbar-dark .navbar-nav .nav-link:after {
   font-family: 'Font Awesome 5 Free';
   content: "\f105";
