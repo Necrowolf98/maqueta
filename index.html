@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los periquitos</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/venobox.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+</head>
+
+<body>
+    <!-- Sección cabecera -->
+    <section id="barra_informacion" class="bg-primary text-white text-center py-3 py-lg-1 d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row justify-content-sm-between align-items-sm-center">
+    
+                <div class="col-12 px-auto mx-auto">
+                    <span id="barra_informacion_span">
+                        <i class="fas fa-map-marker-alt mr-1"></i>
+                        Estamos ubicados en Manta. En el sector la floresta calle mb2.
+                    </span>
+    
+                    <ul class="redes-sociales-informacion list-unstyled d-inline-flex mb-0">
+                        <li class="ml-3">
+                            <a href="https://chat.whatsapp.com/HmqlHqio59qFcJTx19S0hS" target="_blank" class="text-center text-white" id="texto-chat">
+                                <img src="/imagenes/whatsapp.png" id="image_what" class="mr-2">
+                                <span id="asd">Chat Whatsapp</span>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <span id="barra_informacion_span">
+                        <i class="fas fa-phone fa-flip-horizontal align-middle ml-3 mr-1"></i>
+                        (+593) 969227858
+                    </span>
+    
+                    <span id="barra_informacion_span">
+                        <i class="fas fa-envelope fa-flip-horizontal align-middle ml-3"></i>
+                        solofrenosmanta@gmail.com
+                    </span>
+    
+                    <ul class="redes-sociales-informacion list-unstyled d-inline-flex mb-0 ml-0">
+                        <li><a href="#" class=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class=""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- MODAL PARA SECTION DE INFORMACIÓN-->
+    <div class="modal fade" id="modal_informacion" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 text-primary" id="myModalLabel">Información</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-sm-between">
+                        <div class="col-12 col-xl-auto">
+                            <span id="barra_informacion_span">
+                                <i class="fas fa-map-marker-alt mr-1 text-primary"></i>
+                                Estamos ubicados en Manta. Al Frente del Sindicato de Choferes de Tarqui.
+                            </span>
+    
+                            <span id="barra_informacion_span">
+                                <i class="fas fa-phone fa-flip-horizontal align-middle ml-1 mr-1 text-primary"></i>
+                                (+593) 969227858
+                            </span>
+    
+                            <span id="barra_informacion_span">
+                                <i class="fas fa-envelope fa-flip-horizontal align-middle ml-3 mr-1 text-primary"></i>
+                                Solofrenosmanta@gmail.com
+                            </span>
+    
+                            <ul class="redes-sociales-informacion_modal list-unstyled d-inline-flex mb-0 ml-0">
+                                <li><a href="#" class=""><i class="fab fa-facebook-f text-primary mr-3"></i></a></li>
+                                <li><a href="#" class=""><i class="fab fa-youtube text-primary"></i></a></li>
+                            </ul>
+    
+                            <ul class="redes-sociales-informacion list-unstyled text-center">
+                                <li>
+                                    <a href="https://chat.whatsapp.com/HmqlHqio59qFcJTx19S0hS" target="_blank" class="text-center text-muted" id="texto-chat">
+                                        <img src="imagenes/whatsapp.png" id="image_what" class="mr-2">
+                                        <span id="asd">Bienvenidos al Chat Whatsapp</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seccion navbar -->
+    <nav id="menu-navegacion" class="navbar navbar-dark bg-secondary navbar-expand-md">
+        <div class="container">
+          <button type="button" class="navbar-toggler" data-toggle="collapse" 
+            data-target="#menu-principal" aria-expanded="false" aria-label="Menú Principal">
+            <span class="boton-menu"></span>
+          </button>
+    
+          <a href="#" id="btn-inicio-login" class="btn btn-primary order-md-1" type="button" data-toggle="modal" data-target="#login_modal">Iniciar Sesión</a>
+    
+        <!-- PARA MOSTRAR EL SECTION QUE SE OCULTA-->
+          <a href="#" class="order-md-2 d-md-none d-block-sm"type="button" data-toggle="modal" data-target="#modal_informacion">
+          <i class="fas fa-info-circle fa-2x text-white"></i></a>
+    
+          <div class="collapse navbar-collapse" id="menu-principal">
+            <div class="col">
+              <ul class="navbar-nav mt-3 mt-md-0 mr-md-1">
+                <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="#barra_informacion"class="nav-link active">Inicio</a></li>
+                <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="#servicios" class="nav-link">Servicios que ofrecemos</a></li>
+                <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="#premios" class="nav-link">Premios</a></li>
+                <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="#somos" class="nav-link">¿Quienes Sómos?</a></li>
+                <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+      </nav>
+
+        <!-- Sección #animacion -->
+        <section id="animacion" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url('imagenes/fondo-slide-1.jpg')">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-9 col-sm-11">
+                        <h2 class="display-4">Creamos Sonrisas billantes que hablaran por tí.</h2>
+                        <a href="#" id="btn-inicio-login" class="btn btn-primary">Reservar una cita</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url('imagenes/fondo-slide-2.jpg')">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-9 col-sm-11">
+                        <h2 class="display-4">Reservar una cita ahora es muy fácil.</h2>
+                        <a href="#" id="btn-inicio-login" class="btn btn-primary">Reservar una cita</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url('imagenes/fondo-slide-3.jpg')">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-9 col-sm-11">
+                        <h2 class="display-4">Disponible las 24 horas, los 7 días de la semana!.</h2>
+                        <a href="#" id="btn-inicio-login" class="btn btn-primary">Reservar una cita</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              
+              <!-- BOTONES DE ANIMACIÓN -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              
+              <!-- PAGINACION DE ANIMACIÓN -->
+              <div class="swiper-pagination"></div>
+              
+        </section>
+
+        <!-- SECCION BIENVENIDO-->
+        <section id="bienvenidos" class="py-5" style="border-bottom: 1px solid rgb(87, 92, 87, 0.20)">
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 text-center">
+                        <div class="contenedor-video d-inline-block position-relative text-truncate">
+                            <img src="imagenes/barco01.jpg" alt="Imagen del video promocional del Sitio" class="img-fluid">
+                            <a href="https://www.youtu.be/diY0yf6iOkc" class="venobox-video" data-vbtype="video"
+                                title="Bienvenidos a nuestro sitio web."><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6  pt-4 pt-lg-0 text-center text-lg-left">
+                        <h2 class="display-4 font-weight-bold text-secondary  mt-lg-n2">
+                            BIENVENIDOS A TU <span class="text-primary">TALLER DE NAVES ACUATICAS.</span>
+                        </h2>
+                        <h6 class="text-black-50">SOMOS PARTE DE TÍ</h6>
+                        <p>
+                            Proporcionamos atención de la más alta calidad, tratamiento individualizado por los
+                            principales expertos del país y en el menor tiempo posible. Te invitamos a conocernos un poco
+                            más.
+                        </p>
+                        <a href="#servicios" id="btn-inicio-login" class="btn btn-primary mt-3 nav-link ver_mas_servicios">Leér más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección servicios -->
+        <section id="servicios" class=" text-center pt-5 pb-2" style="border-bottom: 1px solid rgb(87, 92, 87, 0.20)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="display-4 font-weight-bold text-secondary">¿SERVICIOS QUE OFRECEMOS?</h2>
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="media col-xl-4 text-secondary py-4 justify-content-sm-between">
+                                    <div class="pr-3">
+                                        <i class="queofrecemos_icono fa fa-leaf text-primary"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="text-primary text-justify">Diagnóstico autos híbridos</h5>
+                                        <p class="text-justify">Realizamos un diagnóstico computarizado del sistema híbrido en
+                                            general y mantenimientos por kilometraje.</p>
+                                    </div>
+                                </div>
+            
+                                <div class="media col-xl-4 text-secondary py-4 justify-content-sm-between">
+                                    <div class="pr-3">
+                                        <i class="queofrecemos_icono fa fa-car text-primary"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="text-primary text-justify">Restablecimiento de baterías</h5>
+                                        <p class="text-justify">Repotenciación de la batería, reparación y restablecimiento y
+                                            prolongación de la vida útil</p>
+                                    </div>
+                                </div>
+            
+            
+                                <div class="media col-xl-4 text-secondary py-4 justify-content-sm-between">
+                                    <div class="pr-3">
+                                        <i class="queofrecemos_icono fa fa-cog text-primary"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="text-primary text-justify">Reparación sistema electrico</h5>
+                                        <p class="text-justify">Diagnósticos computarizado mediante el uso de scanner, osciloscopio
+                                            y equipo de medición</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row">
+                                <div class="media col-xl-4 text-secondary pb-4 justify-content-sm-between">
+                                    <div class="pr-3">
+                                        <i class="queofrecemos_icono far fa-sun text-primary"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="text-primary text-justify">Aire acondicionado</h5>
+                                        <p class="text-justify">Recargas del sistema de aire acondicionado por medio de reciclaje,
+                                            calibración de frío y cambio de lubricante.</p>
+                                    </div>
+                                </div>
+            
+                                <div class="media col-xl-4 text-secondary pb-4 justify-content-sm-between">
+                                    <div class="pr-3">
+                                        <i class="queofrecemos_icono fa fa-edit text-primary"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="text-primary text-justify">Capacitaciones</h5>
+                                        <p class="text-justify">Capacitación en electrónica automotriz, asesoramiento de proyectos.
+                                        </p>
+                                    </div>
+                                </div>
+            
+                                <div class="media col-xl-4 text-secondary pb-4 justify-content-sm-between">
+                                    <div class="pr-3">
+                                        <i id="girar_avion" class="queofrecemos_icono fa fa-plane text-primary"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="text-primary text-justify">Importacion de repuestos</h5>
+                                        <p class="text-justify">Importación directa de repuestos originales, alternos y equipo de
+                                            diagnóstico.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- Seccion #premios -->
+        <section id="premios" class="py-5 text-center" style="border-bottom: 1px solid rgb(87, 92, 87, 0.20)">
+            <div class="container py-5">
+                <h2 class="display-4 font-weight-bold text-secondary">NUESTRA EMPRESA EN NÚMEROS</h2>
+                <h6 class="text-black-50">TENEMOS ALGUNOS NÚMEROS QUE MOSTRARTE.</h6>        
+                <div class="row">
+                    <div class="col-6 col-md-3 py-4">
+                        <i class="far fa-calendar-alt text-primary display-4 mb-2"></i>
+                        <div class="font-weight-bold text-secondary h2">
+                            <span class="counter" data-counterup-beginat="0" data-counterup-time="500">12</span>
+                        </div>
+                        <h6>Años de experiencia</h6>
+                        <div class="contador-linea"></div>
+                    </div>
+
+                    <div class="col-6 col-md-3 py-4">
+                        <i class="fab fa-angellist text-primary display-4 mb-2"></i>
+                        <div class="font-weight-bold text-secondary h2">
+                            <span class="counter" data-counterup-beginat="0" data-counterup-time="2000">156</span>
+                        </div>
+                        <h6>Clientes satisfechos</h6>
+                        <div class="contador-linea"></div>
+                    </div>
+
+                    <div class="col-6 col-md-3 py-4">
+                        <i class="fas fa-handshake text-primary display-4 mb-2"></i>
+                        <div class="font-weight-bold text-secondary h2">
+                            <span class="counter" data-counterup-beginat="0" data-counterup-time="1500">120</span>
+                        </div>
+                        <h6>Premios obtenidos</h6>
+                        <div class="contador-linea"></div>
+                    </div>
+
+                    <div class="col-6 col-md-3 py-4">
+                        <i class="fas fa-thumbs-up text-primary display-4 mb-2"></i>
+                        <div class="font-weight-bold text-secondary h2">
+                            <span class="counter" data-counterup-beginat="0" data-counterup-time="2000">100</span><span>%</span>
+                        </div>
+                        <h6>Años de experiencia</h6>
+                            <div class="contador-linea"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="somos" style="border-bottom: 1px solid rgb(87, 92, 87, 0.20)">
+            <br>
+             <div class="container">
+                 <div class="col-xl-12">
+                     <div class="row">
+                         <div class="col-md-6">
+                            <h3 class="title"><center><strong>RESEÑA HISTÓRICA</strong></center></h3>
+                            <p ALIGN="justify">
+                            Se inicio en principios del 2009 las prestaciones de nuestros servicios ya que como en todo negocio era muy bajo la fluencia de los clientes, pero poco a poco se nos hicimos conocer ya que trabajamos con profesionalismo, calidad y buen servicio.</p>
+                            <p ALIGN="justify">En el año 2012 ampliamos las instalaciones construyendo un galpón más amplio para así poder brindar un mejor servicio en nuestro taller.</p>
+                            <p ALIGN="justify">A partir del 2013 acogimos jóvenes de diferentes entidades educativas que realizaban sus prácticas e aplicaban sus conocimientos de enseñanza con nosotros y así mismo los evaluamos para poder dar el informe final.</p>
+                            <p ALIGN="justify">Hoy en día estamos actualizándonos tanto en herramientas modernas como en conocimiento de tecnología para realizar un mejor trabajo y así mismo tener un mejor desempeño laborar, como el cumplimiento y satisfacción  a las necesidades de nuestra clientela.</p>
+                         </div>
+
+                         <div class="col-md-6">
+                            <h3 class="title"><center><strong>MISIÓN</strong></center></h3>
+                                <p ALIGN=center>Brindar un servicio integral de mantenimiento y reparación.</p>
+                                <br>
+                                <h3 class="title"><center><strong>VISIÓN</strong></center></h3>
+                                <ul class="list-unstyled text-center">
+                                    <li>Ser el mejor en el servicio de reparación y mantenimiento.</li>
+                                    <li>Ser el mejor en el servicio de reparación y mantenimiento.</li>
+                                    <li>Ser el mejor en el servicio de reparación y mantenimiento.</li>
+                                </ul>
+                                <center><img src="imagenes/vision.png" class="zoom2" height="150px" width="300px" style="margin-top:30px" alt=""> <br><br></center>
+                          </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section id="ubicacion">
+            <div id="ubicacion" style="margin-bottom:20px"></div> 
+            <div class="container" style="margin-bottom:60px; margin-top:60px">
+                  <h3 class="efectoh3">  &nbsp;&nbsp;<strong>UBICACIÓN</strong></h3>
+                  <center>
+                      <h6><span class="fa fa-map-marker" aria-hidden="true"></span> Estamos ubicados en el sector la floresta, <label> Manta-Ecuador.</label></h6>
+                      <h6><i class="fa fa-envelope"></i><a href="mailto:anthonychica.98@gmail.com"><span> anthonychica.98@gmail.com</span></a></h6>
+                  </center>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1186.0115305384807!2d-80.70088988221795!3d-0.9659078412616772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be6a0edbb85b3%3A0x7658253f9ba19fc7!2sCalle+Oliva+Miranda%2C+Manta!5e0!3m2!1ses!2sec!4v1563641698940!5m2!1ses!2sec" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+         </section>
+
+         <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="113838900400546"
+  theme_color="#0084ff"
+  logged_in_greeting="Hola! pueden ayudarme?"
+  logged_out_greeting="Hola! pueden ayudarme?">
+      </div>
+
+        <!-- Sección #pie-de-pagina -->
+        <footer id="pie-de-pagina" class="bg-dark  text-light text-truncate">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="columna-inclinada col-12 col-md-6 col-xl-5 py-2">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="text-white font-weight-bold h1">Soporte</h2>
+                            </div>
+                            <div class="col-auto text-black-50 ">
+                                <i class="fas fa-wrench fa-4x"></i>
+                            </div>
+                            <div class="col-auto  text-black-50 pl-0">
+                                <h3>(593) 96-922 7858</h3>
+                                <p>Servicio de ayuda esta disponible 24h/7.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-7 py-2 text-center text-md-right small">
+                        <ul class="enlaces-secundario list-unstyled d-inline-flex text-uppercase ">
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Políticas de Privacidad</a></li>
+                        </ul>
+                        <p>©2020. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/script_vistamovil.js"></script>  
+  <script src="js/venobox.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stickit.min.js"></script>
+  <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+
+</body>
+
+</html>
